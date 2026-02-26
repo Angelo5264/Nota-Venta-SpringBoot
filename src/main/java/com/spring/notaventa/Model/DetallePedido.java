@@ -7,6 +7,7 @@ import jakarta.persistence.*;
 public class DetallePedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_detallepedido")
     private Integer id_detallePedido;
 
     @ManyToOne

@@ -23,6 +23,7 @@ public class PedidoService implements Existencia{
     public Optional<Pedido> buscarPedidoOpt(Integer id){
         return repository.findById(id);
     }
+
     public Pedido buscarPedido(Integer id){
         try {
             Optional<Pedido> optionalPedido = repository.findById(id);

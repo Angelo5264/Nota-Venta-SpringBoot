@@ -7,12 +7,12 @@ import jakarta.persistence.*;
 public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id_pedido;
+    private Integer idPedido;
 
     public Pedido() {
     }
 
-    public Integer getId_pedido() {
-        return id_pedido;
+    public Integer getIdPedido() {
+        return idPedido;
     }
 }

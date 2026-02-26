@@ -32,8 +32,8 @@ public class DetallePedidoService {
         repository.save(detallePedido);
     }
 
-    public List<DetallePedido> buscarDetallePedidoPorIdPedido(Integer id){
-        return repository.findByPedido_Id_pedido(id);
+    public List<DetallePedido> buscarDetallePedidoPorIdPedido(Integer idPedido){
+        return repository.findByPedidoIdPedido(idPedido);
     }
 
     public BigDecimal totalPedido(Integer idPedido){
@@ -47,4 +47,5 @@ public class DetallePedidoService {
         }
         return total;
     }
+
 }
